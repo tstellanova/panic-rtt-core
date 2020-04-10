@@ -1,0 +1,16 @@
+[package]
+name = "panic-rtt-core"
+version = "0.1.0"
+authors = ["Todd Stellanova <tstellanova@users.noreply.github.com>"]
+edition = "2018"
+categories = ["no-std","embedded"]
+description = "Report panic messages to the host using RTT / jlink"
+keywords = ["panic-handler", "panic-impl", "panic", "rtt", "jlink"]
+license = "BSD-3-Clause"
+repository = "https://github.com/tstellanova/panic-rtt-core"
+readme = "README.md"
+
+
+[dependencies]
+cortex-m = {version = "0.6.2" }
+rtt-target = {version = "0.1.0", features=["cortex-m"]}
