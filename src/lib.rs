@@ -24,7 +24,7 @@
 
 use core::panic::PanicInfo;
 use cortex_m::{asm, interrupt};
-pub use rtt_target::{rprintln, rtt_init_print};
+pub use rtt_target::{rprint, rprintln, rtt_init_print};
 
 #[inline(never)]
 #[panic_handler]
